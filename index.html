@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inana Fund Raising </title>
+
+    <!-- LINK CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <!-- navbar -->
+    <nav class="navbar">
+
+        <!-- LOGO -->
+        <div class="logo">
+            <img src="images/Logo.png" alt="Logo">
+        </div>
+
+    </nav>
+    <!-- end of navbar -->
+
+
+    <section class="login-section">
+
+    <div class="login-container">
+
+        <!-- Top Image -->
+        <div class="login-image" data-aos="zoom-in" data-aos-duration="800">
+            <img src="images/logoin.png" alt="login image">
+        </div>
+
+        <form>
+
+            <div class="input-group" data-aos="fade-in" data-aos-delay="200">
+                <input type="email" placeholder="Email" required>
+            </div>
+
+            <div class="input-group" data-aos="fade-in" data-aos-delay="300">
+                <input type="password" placeholder="Password" required>
+            </div>
+
+            <div class="forgot" data-aos="fade-in" data-aos-delay="400">
+                <a href="#">Forgot Password?</a>
+            </div>
+
+            <!-- IMAGE BUTTON -->
+            <button type="submit" class="login-btn-img" data-aos="zoom-in" data-aos-delay="500">
+                <img src="images/login icon.png" alt="Login">
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <script>
+  AOS.init({
+    duration: 800,
+    once: true,
+    offset: 50,
+    easing: 'ease-in-out',
+    disable: 'mobile' // 👈 optional: disables AOS on Android completely
+  });
+</script>
+
+
+</body>
+
+</html>
