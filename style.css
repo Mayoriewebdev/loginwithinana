@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: url("images/background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+}
+
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+
+    position: relative;
+}
+
+/* LOGO */
+.logo img {
+    height: 45px;
+}
+
+
+/* EXTRA SMALL DEVICES */
+@media(max-width:500px) {
+    .navbar {
+        padding: 15px 20px;
+    }
+
+    .logo img {
+        height: 40px;
+    }
+}
+
+/* end navbar */
+
+
+
+
+/* LOGIN SECTION */
+.login-section {
+    width: 100%;
+    min-height: 100vh;      /* fallback */
+    min-height: 100dvh;     /* 👈 FIX for Android */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 40px;
+}
+
+/* CONTAINER */
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    padding: 20px;
+}
+
+/* TITLE */
+.login-container h1 {
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+/* IMAGE (fixed size like your design) */
+.login-image img {
+    width: 100%;
+    max-width: 200px;  /* keeps same visual size */
+    height: auto;
+    margin-bottom: 90px;
+}
+
+/* INPUTS */
+.input-group {
+    margin-bottom: 25px;
+}
+
+.input-group input {
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    padding: 10px 5px;
+    font-size: 16px;
+    background: transparent;
+    outline: none;
+}
+
+/* FORGOT PASSWORD */
+.forgot {
+    text-align: right;
+    margin-bottom: 30px;
+}
+
+.forgot a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+}
+
+/* LOGIN BUTTON */
+/* IMAGE BUTTON */
+.login-btn-img {
+    width: 70%;
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.login-btn-img img {
+    width: 50%;
+    height: auto;
+    display: block;
+    margin: 90px auto 0; /* top | left-right | bottom */
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.login-btn-img img:hover {
+    transform: scale(1.05);
+}
+
+/* MOBILE FIX */
+@media(max-width:500px) {
+    .login-btn-img {
+        width: 100%;
+    }
+}
+
+
+
+/* SIGNUP TEXT */
+.signup-text {
+    margin-top: 20px;
+    color: #aaa;
+}
+
+.signup-text a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* MOBILE */
+@media(max-width:500px) {
+    .login-container h1 {
+        font-size: 26px;
+    }
+
+    .login-btn {
+        width: 100%;
+    }
+}
